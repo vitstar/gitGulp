@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("../fonts/RobotoRegular/robotothin.woff2") format("woff2"), url("../fonts/RobotoRegular/robotothin.woff") format("woff"), url("../fonts/RobotoRegular/robotothin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; } }
+
+/* Small Devices, Tablets */
+/* Small Devices, Tablets */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Extra Small Devices, Phones */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Extra Small Devices, Phones */
+/* Extra Small Devices, Phones */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Custom, iPhone Retina */
+/* Custom, iPhone Retina */
+/* Small Devices, Tablets */
+/* Custom, iPhone Retina */
+/* Custom, iPhone Retina */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important; }
+
+input {
+  outline: none !important; }
+
+*::-webkit-input-placeholder {
+  opacity: 1; }
+
+*:-moz-placeholder {
+  opacity: 1; }
+
+*::-moz-placeholder {
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  opacity: 1; }
+
+*:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+
+input:focus {
+  outline: none; }
+
+a {
+  outline: none; }
+
+a:hover {
+  color: #292929; }
+
+body {
+  background: #eaeff4;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-style: normal;
+  color: #4a5866;
+  overflow-x: hidden; }

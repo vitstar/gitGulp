@@ -1,0 +1,65 @@
+@import "fonts";
+@import "settings";
+@import "media";
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+	outline: none !important;
+}
+input {
+	outline: none !important;
+}
+*::-webkit-input-placeholder {
+	opacity: 1;
+}
+*:-moz-placeholder {
+	opacity: 1;
+}
+*::-moz-placeholder {
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	opacity: 1;
+}
+*:hover {
+	transition: 0.2s;
+}
+input:focus { outline: none; }
+a {
+	outline: none;
+}
+a:hover {
+	    color: #292929;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+body {
+	background: #eaeff4;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: 'Roboto Condensed';
+	font-weight: 400;
+    font-style: normal;
+    color: #4a5866;
+	overflow-x: hidden;
+}
+
+.sprites {
+	
+}

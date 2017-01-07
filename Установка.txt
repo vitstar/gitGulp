@@ -1,0 +1,36 @@
+Установка Gulp
+npm i gulp --save-dev
+
+Установка всх плагинов
+
+npm i gulp-clean --save-dev
+npm i browser-sync --save-dev
+npm i gulp-if --save-dev
+npm i gulp-minify-css --save-dev
+npm i gulp-sftp --save-dev
+npm i gulp-uglify --save-dev
+npm i gulp-useref --save-dev
+npm i wiredep --save-dev // Добавляет библиотеки bower через коментарии
+npm i gulp-sass --save-dev
+npm i gulp-autoprefixer --save-dev
+npm install --save-dev gulp-rigger // Подключам стронии html в тело сайта
+
+// 2 плагина для сжатие картинок
+npm i gulp-imagemin --save-dev
+npm i imagemin-pngquant --save-dev
+
+// Установка bower глобально
+npm install -g bower
+
+// Необходимые пакеты bower
+bower install --save jquery
+bower install --save normalize-css
+bower install --save font-awesome
+bower install --save owl.carousel
+bower install --save magnific-popup
+
+
+// Удаление папки node_modules
+rimraf node_modules
+  установка утилиты
+  npm i rimraf -g

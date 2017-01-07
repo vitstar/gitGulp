@@ -1,6 +1,7 @@
 @import "fonts";
 @import "settings";
 @import "media";
+@import "bourbon";
 
 * {
   -webkit-box-sizing: border-box;
@@ -47,6 +48,10 @@ body textarea:required:valid {
 	
 }
 
+html {
+	font-size: 16px;
+}
+
 body {
 	background: #eaeff4;
 	font-size: 16px;
@@ -60,6 +65,3 @@ body {
 	overflow-x: hidden;
 }
 
-.sprites {
-	
-}

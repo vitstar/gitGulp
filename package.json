@@ -13,6 +13,8 @@
     "gulp-sftp": "^0.1.5",
     "gulp-uglify": "^1.5.3",
     "gulp-useref": "^3.0.7",
+    "node-bourbon": "^4.2.8",
     "wiredep": "^3.0.0"
-  }
+  },
+  "dependencies": {}
 }

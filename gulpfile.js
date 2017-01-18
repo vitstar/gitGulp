@@ -8,23 +8,11 @@ var gulp           = require('gulp'),
     sftp           = require('gulp-sftp'),
     sass           = require('gulp-sass'),
     browserSync    = require('browser-sync'),
-    rigger         = require('gulp-rigger'),
     autoprefixer   = require('gulp-autoprefixer'),
     bourbon = require('node-bourbon');
 
 
 // Подключение плагинов
-
-gulp.task('fileinclude', function() {
-  gulp.src(['app/index.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest(''));
-});
-
-// Создания спрайта
 
 
 // Указываем browserSync какую папку отслежевать
@@ -35,13 +23,6 @@ gulp.task('browserSync', function() {
         },
         notify: false
     });
-});
-
-gulp.task('html', function () {
-    gulp.src('app/template/*.html') //Выберем файлы по нужному пути
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest('app/')) //выгрузим их в папку build
-        .pipe(browserSync.reload({stream: true}));
 });
 
 // Обработчик scss в css
@@ -75,11 +56,11 @@ gulp.task('bower', function () {
 // Указывает за какими файлами и папками следить для Автообновления браузера
 gulp.task('watch', function() {
     gulp.watch('app/sass/*.scss', ['css']);
-    gulp.watch('app/template/**/*.html', ['html']);
+    gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
     gulp.watch('bower.json', browserSync.reload);
 });
-gulp.task('default', ['browserSync', 'watch', 'css','bower', 'html']);
+gulp.task('default', ['browserSync', 'watch', 'css','bower']);
 
 //************  Вывод на продакшен  *************//
 

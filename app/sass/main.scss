@@ -1,6 +1,5 @@
 @import "fonts";
 @import "settings";
-@import "media";
 @import "bourbon";
 
 * {
@@ -34,11 +33,18 @@ input {
 input:focus { outline: none; }
 a {
 	outline: none;
-}
-a:hover {
-	    color: #292929;
-}
+	text-decoration: underline;
+	color: #0AACFF;
 
+	&:hover {
+		color: #0A90F0;
+	}
+	&:active,
+	&:focus {
+		text-decoration: none;
+		color: #0A62BE;
+	}
+}
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
@@ -47,21 +53,25 @@ body input:required:valid,
 body textarea:required:valid {
 	
 }
-
 html {
 	font-size: 16px;
 }
-
 body {
-	background: #eaeff4;
-	font-size: 16px;
+	background: #fff;
+	font-size: rem(16);
 	min-width: 320px;
 	position: relative;
 	line-height: 1.6;
 	font-family: 'Roboto Condensed';
-	font-weight: 400;
+	font-weight: normal;
     font-style: normal;
-    color: #4a5866;
+    color: #333;
 	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
 }
 
+
+
+// Адаптация
+
+@import "media";

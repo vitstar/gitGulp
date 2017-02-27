@@ -1,0 +1,53 @@
+@mixin inlineblock($valign: top){
+	display: inline-block;
+	vertical-align: $valign;
+}
+// @include inlineblock(middle);
+
+%clearfix{
+	&:after, &:before {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+// @extend %clearfix;
+
+//responsive
+@function rem($px) {
+	@return $px / 16px + 0rem;
+}
+// rem(16px)
+
+
+@mixin desktop {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+
+@mixin tablets {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+// @include tablets {
+//		width: 100%;
+//	}
+
+
+@mixin phones {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}

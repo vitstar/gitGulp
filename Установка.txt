@@ -14,6 +14,7 @@ npm i wiredep --save-dev // Добавляет библиотеки bower через коментарии
 npm i gulp-sass --save-dev
 npm i gulp-autoprefixer --save-dev
 npm install --save-dev gulp-rigger // Подключам стронии html в тело сайта
+gulp-sourcemaps // Карти css для отслеживания в каком файле код
 
 // 2 плагина для сжатие картинок
 npm i gulp-imagemin --save-dev

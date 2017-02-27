@@ -5,6 +5,7 @@ var gulp           = require('gulp'),
     uglify         = require('gulp-uglify'),
     minifyCss      = require('gulp-minify-css'),
     clean          = require('gulp-clean'),
+    sourcemaps = require('gulp-sourcemaps'),
     sftp           = require('gulp-sftp'),
     sass           = require('gulp-sass'),
     browserSync    = require('browser-sync'),
@@ -27,8 +28,10 @@ gulp.task('browserSync', function() {
 // Обработчик scss в css
 gulp.task('css', function() {
     gulp.src('app/sass/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
     .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({stream: true}));
 });

@@ -1,63 +1,12 @@
 @font-face {
   font-family: 'Roboto';
-  src: local("Roboto Thin"), local("Roboto-Thin"), url("../fonts/RobotoRegular/robotothin.woff2") format("woff2"), url("../fonts/RobotoRegular/robotothin.woff") format("woff"), url("../fonts/RobotoRegular/robotothin.ttf") format("truetype");
-  font-weight: 100;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fopts/Roboto/Roboto.woff2") format("woff2"), url("../fopts/Roboto/Roboto.woff") format("woff"), url("../fopts/Roboto/Roboto.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal; }
 
-/*==========  Desktop First Method  ==========*/
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    animation: none !important; } }
-
-/* Small Devices, Tablets */
-/* Small Devices, Tablets */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-/* Extra Small Devices, Phones */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-/* Extra Small Devices, Phones */
-/* Extra Small Devices, Phones */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Custom, iPhone Retina */
-/* Custom, iPhone Retina */
-/* Small Devices, Tablets */
-/* Custom, iPhone Retina */
-/* Custom, iPhone Retina */
-/* Custom, iPhone Retina */
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
 * {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 * {
@@ -81,32 +30,33 @@ input {
   opacity: 1; }
 
 *:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s; }
 
 input:focus {
   outline: none; }
 
 a {
-  outline: none; }
-
-a:hover {
-  color: #292929; }
+  outline: none;
+  text-decoration: underline;
+  color: #0AACFF; }
+  a:hover {
+    color: #0A90F0; }
+  a:active, a:focus {
+    text-decoration: none;
+    color: #0A62BE; }
 
 html {
   font-size: 16px; }
 
 body {
-  background: #eaeff4;
-  font-size: 16px;
+  background: #fff;
+  font-size: 1rem;
   min-width: 320px;
   position: relative;
   line-height: 1.6;
   font-family: 'Roboto Condensed';
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
-  color: #4a5866;
-  overflow-x: hidden; }
-
-.sprites {
-  font-size: 1.5rem; }
+  color: #333;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; }

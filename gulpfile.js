@@ -8,8 +8,7 @@ var gulp           = require('gulp'),
     sftp           = require('gulp-sftp'),
     sass           = require('gulp-sass'),
     browserSync    = require('browser-sync'),
-    autoprefixer   = require('gulp-autoprefixer'),
-    bourbon = require('node-bourbon');
+    autoprefixer   = require('gulp-autoprefixer');
 
 
 // Подключение плагинов
@@ -28,9 +27,6 @@ gulp.task('browserSync', function() {
 // Обработчик scss в css
 gulp.task('css', function() {
     gulp.src('app/sass/*.scss')
-    .pipe(sass({
-        includePaths: bourbon.includePaths
-    }))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('app/css'))

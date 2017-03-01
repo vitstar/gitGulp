@@ -2,7 +2,7 @@
 	display: inline-block;
 	vertical-align: $valign;
 }
-// @include inlineblock(middle);
+/* @include inlineblock(middle); */
 
 %clearfix{
 	&:after, &:before {
@@ -14,14 +14,14 @@
 		clear: both;
 	}
 }
-// @extend %clearfix;
+/* @extend %clearfix; */
 
-//responsive
-//px to rem
+/* responsive */
+/* px to rem */
 @function rem($px) {
 	@return $px / 16px + 0rem;
 }
-// rem(16px)
+/* rem(16px) */
 
 
 @mixin desktop {
@@ -42,9 +42,11 @@
 		@content;
 	}
 }
-// @include tablets {
-//		width: 100%;
-//	}
+/*  
+	@include tablets {
+		width: 100%;
+	}
+*/
 
 
 @mixin phones {

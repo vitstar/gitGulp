@@ -27,7 +27,7 @@ gulp.task('browserSync', function() {
 
 // Обработчик scss в css
 gulp.task('css', function() {
-    gulp.src('app/sass/*.scss')
+    gulp.src('app/sass/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
     .pipe(sass().on('error', sass.logError))

@@ -29,8 +29,10 @@ bower install --save normalize-css
 bower install --save font-awesome
 bower install --save owl.carousel
 bower install --save magnific-popup
-bower install susy --save
-
+bower install --save jquery-selectric
+bower install --save jquery-mask-plugin
+bower install --save jquery-animateNumber
+bower install --save waypoints
 
 // Удаление папки node_modules
 rimraf node_modules

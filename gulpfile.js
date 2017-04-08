@@ -27,7 +27,7 @@ gulp.task('browserSync', function() {
 
 // Обработчик scss в css
 gulp.task('css', function() {
-    gulp.src('app/sass/**/*.scss')
+    gulp.src('app/sass/*.scss')
     .pipe(sourcemaps.init())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
     .pipe(sass().on('error', sass.logError))
@@ -54,7 +54,7 @@ gulp.task('bower', function () {
 
 // Указывает за какими файлами и папками следить для Автообновления браузера
 gulp.task('watch', function() {
-    gulp.watch('app/sass/*.scss', ['css']);
+    gulp.watch('app/sass/**/*.scss', ['css']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
     gulp.watch('bower.json', browserSync.reload);

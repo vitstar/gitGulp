@@ -43,11 +43,11 @@ a {
 }
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-	
+
 }
 body input:required:valid,
 body textarea:required:valid {
-	
+
 }
 html {
 	font-size: 16px;
@@ -58,10 +58,58 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.75;
-	font-family: 'Roboto Condensed';
+	@include roboto(); 
 	font-weight: normal;
-    font-style: normal;
-    color: #333;
+  font-style: normal;
+  color: #333;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: 768px) {
+    & {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    & {
+      width: 1210px;
+    }
+  }
+}
+
+.hidden-laptop {
+
+  @media screen and (max-width: 992px) {
+    display: none !important;
+  }
+}
+.visibility-laptop {
+
+  @media screen and (min-width: 992px) {
+    display: none !important;
+  }
+}
+.hidden-tablets {
+
+  @media screen and (max-width: 767px) {
+    display: none !important;
+  }
+}
+.visibility-tablets {
+
+  @media screen and (min-width: 767px) {
+    display: none !important;
+  }
 }

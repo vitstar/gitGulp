@@ -16,6 +16,19 @@
 }
 /* @extend %clearfix; */
 
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+/*
+	@include input-placeholder {
+		color: #fff;
+	}
+*/
+
 /* responsive */
 /* px to rem */
 @function rem($px) {
@@ -42,7 +55,7 @@
 		@content;
 	}
 }
-/*  
+/*
 	@include tablets {
 		width: 100%;
 	}
